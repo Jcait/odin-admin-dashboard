@@ -21,6 +21,8 @@ body {
 .header {
     border: solid 1px black;
     grid-column: 2;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
 }
 .placeholder {
     border: solid 1px blue;
@@ -28,6 +30,18 @@ body {
 
 .placeholder {
     border: solid 1px blue;
+}
+
+.navbar {
+    border: solid 1px blue;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr
+}
+
+.content {
+    border: solid 1px red;
+    grid-row: 2/5;
 }
 
 
