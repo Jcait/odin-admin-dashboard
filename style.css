@@ -26,6 +26,27 @@ body {
 ul{
     list-style-type: none;
 }
+
+li > p {
+    margin: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.d-one {
+    display: grid;
+}
+
+.side-logo {
+    height: 35px;
+}
+
 .logo {
     display: flex;
     flex-direction: row;
