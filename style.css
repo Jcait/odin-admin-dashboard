@@ -41,6 +41,7 @@ li {
 
 .d-one {
     display: grid;
+    gap: 12px;
 }
 
 .side-logo {
