@@ -83,11 +83,13 @@ h3 {
 
 .navbar {
     /* border: solid 1px blue; */
-    background-color: #f1f5f9;
+    background-color: white;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 2fr 1fr;
     box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+    gap: 16px;
+    padding: 12px;
 }
 
 
@@ -106,9 +108,9 @@ h3 {
 }
 
 input {
-    background-color: #94a3b8;
-    width: 65%;
-    height:40%;
+    background-color: #e2e8f0;
+    width: 600px;
+    height:25px;
     border: none;
     border-radius: 10px;
     font-size: 1.5rem;
@@ -122,6 +124,44 @@ input {
     align-items: center;
     margin-top: 20px;
     margin-left: 30px;
+    gap: 12px
+}
+
+.profile {
+    grid-row: 2/3;
+    display: flex;
+    gap: 25px;
+}
+
+.profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin-left: 30px;
+
+}
+
+.profile-text > p {
+    font-size: 0.8rem;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+}
+
+.profile-text > h4 {
+    font-size: 1.2rem;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    margin-top: 12px;
+}
+
+.profile-tr {
+    grid: 1/2 / 2/3;
 }
 
 
