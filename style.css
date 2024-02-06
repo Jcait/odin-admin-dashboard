@@ -1,3 +1,8 @@
+* {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
 }
@@ -52,6 +57,7 @@ li {
 .logo {
     display: grid;
     grid-auto-columns: min-content;
+    align-items: center;
 }
 
 
@@ -68,11 +74,11 @@ h3 {
 }
 
 .header {
-    border: solid 1px black;
     grid-column: 2;
     grid-row: 1/2;
     display: grid;
     grid-auto-rows: min-content;
+    box-shadow: 4px 23px 35px 0px rgba(0,0,0,0.1);
 }
 /* .placeholder {
     border: solid 1px blue;
@@ -88,7 +94,7 @@ h3 {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 2fr 1fr;
-    box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 4px 23px 35px 0px rgba(0,0,0,0.1);
     gap: 16px;
     padding: 12px;
 }
@@ -158,18 +164,23 @@ input {
 .profile-tr {
     grid-column: 2/3;
     display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .profile-tr > .profile-pic {
     height: 50px;
     width: 50px;
-        margin-left: 0;
+    margin-left: 0;
+
 }
 
 .user-buttons {
     grid-row: 2/3;
     grid-column: 2/3;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 button {
@@ -188,13 +199,16 @@ button {
     grid-template-columns: 2fr 1fr;
     background-color: #e2e8f0;
     grid-template-rows: min-content 4fr;
+    padding-top: 16px;
+    gap: 12px;
 }
 
 .p-header {
     grid-column: 1/2;
 }
 
-h3 {
+h3,
+.trends> h3{
     margin: 0;
     margin-left: 24px;
 }
@@ -218,16 +232,41 @@ h3 {
 
 .card {
     height: 80%;
-    width: 100%;
+    width: 95%%;
     border-radius: 12px;
-    background-color: white;
+    background-color: #fafafa;
     border-left: 8px blue solid;
+    box-shadow: 4px 23px 7px -10px rgba(0,0,0,0.1);
+    display: grid;
+    /* grid-auto-rows: min-content; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 60% 20%
+    box-sizing: border-box;
+    padding: 12px;
+
+}
+.card > h4 {
+    margin-bottom: 0;
+}
+
+.card > p {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    font-size: .9rem;
 }
 
 .content-announcements > .card,
 .trends > .card {
     width: 85%;
     border: none
+}
+
+.card-buttons {
+    grid-row: 3/4;
+    grid-row: 3/4;
+    grid-column: 2;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
