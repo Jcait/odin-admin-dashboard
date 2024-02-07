@@ -168,7 +168,8 @@ input {
     gap: 30px;
 }
 
-.profile-tr > .profile-pic {
+.profile-tr > .profile-pic,
+.card > .profile-pic {
     height: 50px;
     width: 50px;
     margin-left: 0;
@@ -271,7 +272,7 @@ h3,
 
 .content-announcements > .card {
     display: grid;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: none;
     padding: 24px;
     gap: 12px;
@@ -294,6 +295,22 @@ hr {
 .announce-text > p {
     font-size: .8rem;
 
+}
+
+.trends > .card {
+    grid-template-rows: none;
+    grid-auto-rows: 1fr;
+    grid-template-columns: min-content 1fr;
+    gap: 16px
+}
+.trends-text> h4, p {
+    margin: 0 ;
+}
+
+.trends-text > p {
+    font-size: 0.7rem;
+    margin-top: 6px;
+    color: grey;
 }
 
 
