@@ -135,6 +135,7 @@ input {
     grid-row: 2/3;
     display: flex;
     gap: 25px;
+    align-items: center;
 }
 
 .profile-pic {
